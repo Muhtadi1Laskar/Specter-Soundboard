@@ -1,3 +1,4 @@
+alert("Click on the button to play your favourite quote from Harvey Specter")
 window.addEventListener("load", () => {
     const sounds = document.querySelectorAll(".sound");
     const buttons = document.querySelectorAll(".audio-list div");
