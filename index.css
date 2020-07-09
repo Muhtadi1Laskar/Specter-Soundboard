@@ -1,6 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, #414345, #232526);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header > h1 {
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 80px;
+    letter-spacing: 0.13em;
+    color: white;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.profile-img{
+    background-image: url(harvey.jpg);
+    background-size: 105% 100%;
+    background-repeat: no-repeat;
+    border: 7px solid #F9F2F2;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: auto;
+    vertical-align: middle;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.body-section{
+    width: 100%;
+    height: 100%;
+}
+
+.audio-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .audio-list > div{
-    width: 350px;
-    height: 159px;
+    width: 40rem;
+    height: 120px;
     margin: 4rem;
     background: #FFF3F3;
     border: 1px solid #FFFFFF;
@@ -8,11 +64,71 @@
     box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     font-family: Comfortaa;
-    font-style: normal;
     font-weight: normal;
-    font-size: 19px;
-    line-height: 41px;
+    font-size: 23px;
+    line-height: 46px;
     letter-spacing: 0.11em;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    font-style: oblique;
+}
 
-    color: #000000;
+
+
+@media screen and (max-width: 749px){
+    .main-body{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .body-section{
+        width: auto;
+    }
+    header > h1 {
+        font-family: Comfortaa;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 105px;
+        line-height: 90px;
+        letter-spacing: 0.13em;
+        color: white;
+        text-align: center;
+        margin-bottom: 6rem;
+    }
+    .profile-img {
+        background-image: url(harvey2.jpg);
+        background-size: 45rem;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        border: 1px solid #F9F2F2;
+        box-shadow: 9px 9px 9px rgba(0, 0, 0, 0.25);
+        margin: auto;
+        vertical-align: middle;
+        width: 86%;
+        height: 29rem;
+        margin-bottom: 4rem;
+        border-radius: 0;
+    } 
+    .audio-list > div {
+        width: 40rem;
+        height: 120px;
+        margin: 3rem;
+        background: #FFF3F3;
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        box-shadow: 6px 8px 6px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        font-family: Comfortaa;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 46px;
+        letter-spacing: 0.11em;
+        color: black;
+        text-align: center;
+        padding: 1rem;
+        font-style: oblique;
+    }
 }

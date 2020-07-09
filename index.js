@@ -4,6 +4,7 @@ window.addEventListener("load", () => {
 
     let arr = [];
     arr.length = 0;
+
     const tooglePlay = (src) => {
         src.map(r => {
             r.pause();
@@ -18,5 +19,4 @@ window.addEventListener("load", () => {
            sounds[index].play(); 
         });
     });
-
 });
